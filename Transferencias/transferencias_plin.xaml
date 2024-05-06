@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Transferencias.transferencias_plin">
+    <Grid RowDefinitions="100,*,100">
+        <Frame Grid.Row="0" CornerRadius="10" Margin="20" Padding="0">
+            <FlexLayout JustifyContent="SpaceAround" AlignItems="Center" BackgroundColor="#671F7A" Padding="0" Margin="0">
+                <Label Text="Saldo: " TextColor="White" FontAttributes="Bold" FontSize="20" Margin="0,0,-200,0"/>
+                <Label Text="1000" x:Name="Saldo" TextColor="White" FontAttributes="Bold" FontSize="20" Margin="0"/>
+            </FlexLayout>
+        </Frame>
+        <StackLayout Grid.Row="1" x:Name="Historial">
+            <Label Text="Historial: " TextColor="Black" FontAttributes="Bold"/>
+
+        </StackLayout>
+        <FlexLayout JustifyContent="SpaceBetween" Grid.Row="2" >
+            <Button Text="Escanear QR" Padding="54,10,54,10" x:Name="EscanearQR" Clicked="EscanearQR_Clicked" CornerRadius="10" Margin="0,5,0,5"/>
+            <Button Text="Yapear" Padding="54,10,54,10" x:Name="transferencia_plin" Clicked="transferencia_plin_Clicked" CornerRadius="10" Margin="0,5,0,5" />
+        </FlexLayout>
+    </Grid>
+</ContentPage>

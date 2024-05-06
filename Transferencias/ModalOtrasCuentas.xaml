@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Transferencias.ModalOtrasCuentas">
+    <FlexLayout Direction="Column" Margin="10,10,10,10">
+        <StackLayout>
+            <Label Text="Cuenta bancaria"/>
+            <Entry x:Name="numero_input" TextColor="Black"/>
+        </StackLayout>
+        <StackLayout>
+            <Label Text="Monto"/>
+            <Entry x:Name="monto_input" TextColor="Black"/>
+        </StackLayout>
+        <StackLayout>
+            <Button Text="Yapear" x:Name="btn_model_transferir" Clicked="btn_model_transferir_Clicked"/>
+            <Button Text="Cancelar" x:Name="btn_model_cancelar"  Clicked="btn_model_cancelar_Clicked"/>
+        </StackLayout>
+    </FlexLayout>
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Transferencias.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <Frame BackgroundColor="#771B85" Padding="24" CornerRadius="0">
+
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <StackLayout Spacing="12">
+                <Button Text="Iniciar sesión" TextTransform="None" Padding="100,10" BackgroundColor="#10CBB4" FontSize="16" CornerRadius="10" TextColor="Black" FontAttributes="Bold" x:Name="InciarSesion" Clicked="InciarSesion_Clicked"/>
+                <Button Text="Crear cuenta" TextTransform="None" Padding="100,10" BackgroundColor="#F0CEF5" FontSize="16" CornerRadius="10" TextColor="Black" FontAttributes="Bold" x:Name="CrearCuenta" Clicked="CrearCuenta_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </Frame>
+
+</ContentPage>

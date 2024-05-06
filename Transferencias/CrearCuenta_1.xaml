@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Transferencias.CrearCuenta_1">
+    <Grid RowSpacing="0" RowDefinitions="120,*,90" BackgroundColor="#F6F4FB">
+        <StackLayout Grid.Row="0" BackgroundColor="#631F7C">
+            <Label Text="Crear Cuenta" FontSize="Title" TextColor="White" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,20,0,20" />
+        </StackLayout>
+        <StackLayout Grid.Row="1">
+            <Frame  Margin="10,10,10,10" VerticalOptions="Start" CornerRadius="10" Padding="10,10,10,10" HasShadow="False" >
+                <StackLayout Spacing="20">
+                    <Frame Padding="10,10,10,10" HasShadow="False" CornerRadius="6">
+                        <Entry  Placeholder="Apellidos y Nombres" PlaceholderColor="Gray" Keyboard="Text" VerticalOptions="Center" x:Name="Nombre" TextColor="Black" />
+                    </Frame>
+                    <Frame Padding="10,10,10,10" HasShadow="False" CornerRadius="6">
+                        <Entry  Placeholder="DNI" PlaceholderColor="Gray" Keyboard="Numeric" VerticalOptions="Center" x:Name="DNI" TextColor="Black"/>
+                    </Frame>
+                    <Frame Padding="10,10,10,10" HasShadow="False" CornerRadius="6">
+                        <Entry  Placeholder="Número" PlaceholderColor="Gray" Keyboard="Numeric" VerticalOptions="Center" x:Name="Numero" TextColor="Black"/>
+                    </Frame>
+                    <Frame Padding="10,10,10,10" HasShadow="False" CornerRadius="6">
+                        <Entry  Placeholder="Correo electronico" PlaceholderColor="Gray" Keyboard="Email" VerticalOptions="Center" x:Name="Correo" TextColor="Black"/>
+                    </Frame>
+                    <Frame Padding="10,10,10,10" HasShadow="False" CornerRadius="6">
+                        <Entry  Placeholder="Saldo" PlaceholderColor="Gray" Keyboard="Numeric" VerticalOptions="Center" x:Name="Saldo" TextColor="Black"/>
+                    </Frame>
+                    <Frame Padding="10,10,10,10" HasShadow="False" CornerRadius="6">
+                        <Entry  Placeholder="Cuenta Bancaria" PlaceholderColor="Gray" Keyboard="Numeric" VerticalOptions="Center" x:Name="Cuenta" TextColor="Black"/>
+                    </Frame>
+                    <Frame Padding="10,10,10,10" HasShadow="False" CornerRadius="6">
+                        <Entry  Placeholder="Contraseña" PlaceholderColor="Gray" Keyboard="Default" IsPassword="True" VerticalOptions="Center" x:Name="Contrasena" TextColor="Black"/>
+                    </Frame>
+                </StackLayout>
+            </Frame>
+            
+        </StackLayout>
+        <Button Text="CONTINUAR"  CornerRadius="12" Grid.Row="2" Margin="10,28,10,15" x:Name="btn_submit" Clicked="btn_submit_Clicked" />
+    </Grid>
+</ContentPage>

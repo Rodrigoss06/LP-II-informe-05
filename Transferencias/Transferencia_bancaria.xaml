@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Transferencias.Transferencia_bancaria">
+    <Grid RowDefinitions="100,*,160">
+        <Frame Grid.Row="0" CornerRadius="10" Margin="20" Padding="0">
+            <FlexLayout JustifyContent="SpaceAround" AlignItems="Center" BackgroundColor="#671F7A" Padding="0" Margin="0">
+                <Label Text="Saldo: " TextColor="White" FontAttributes="Bold" FontSize="20" Margin="0,0,-200,0"/>
+                <Label Text="1000" x:Name="Saldo" TextColor="White" FontAttributes="Bold" FontSize="20" Margin="0"/>
+            </FlexLayout>
+        </Frame>
+        <StackLayout Grid.Row="1" x:Name="Historial">
+            <Label Text="Historial: " TextColor="Black" FontAttributes="Bold"/>
+
+        </StackLayout>
+        <FlexLayout Grid.Row="2" AlignItems="Center" Direction="Column"  HorizontalOptions="Center" Margin="10,10,10,10">
+            <Label Text="Transferencias" FontSize="15"/>
+            <Button Text="Entre cuentas" Padding="120,10,120,10" TextTransform="None" x:Name="entre_cuentas" Clicked="entre_cuentas_Clicked" />
+            <Button Text="Otras cuentas" Padding="120,10,120,10" TextTransform="None" x:Name="otras_cuentas" Clicked="otras_cuentas_Clicked" />
+        </FlexLayout>
+    </Grid>
+    
+</ContentPage>
